@@ -7,7 +7,7 @@
     <title>Marketplace</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/general.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <icon>
 </head>
 <body>
     <h1>Productos</h1>

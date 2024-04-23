@@ -1,11 +1,4 @@
-function showSearchBar() {
-    var searchBar = document.getElementById("searchBar")
-    if (searchBar.style.display === "none") {
-        searchBar.style.display = "block"
-    } else {
-        searchBar.style.display = "none"
-    }
-}
+
 
 async function cantidad(){
     let link = await fetch('https://my-json-server.typicode.com/agustinruatta/fake_json_server_db/statistics')
@@ -36,6 +29,7 @@ async function loadProductInfo(idDestino, linkDestino){
     }
 }
 cantidad()
+
 
 loadProductInfo('productInfo', 1)
 loadProductInfo('productInfo2', 2)
