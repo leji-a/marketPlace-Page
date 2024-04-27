@@ -1,5 +1,3 @@
-
-
 async function cantidad(){
     let link = await fetch('https://my-json-server.typicode.com/agustinruatta/fake_json_server_db/statistics')
     let cuerpo = await link.json()
@@ -13,7 +11,6 @@ async function loadProductInfo(idDestino, linkDestino){
         let descriptionPartes = cuerpo.description.split('. ')
         let formateoDescripcion = descriptionPartes.join('.<br>')
         
-
         document.getElementById(idDestino).innerHTML = `
             <img src="${cuerpo.image_url}" alt="${cuerpo.name}"><br> 
             <div class='product-name'>${cuerpo.title}</div><br>
@@ -29,7 +26,6 @@ async function loadProductInfo(idDestino, linkDestino){
     }
 }
 cantidad()
-
 
 loadProductInfo('productInfo', 1)
 loadProductInfo('productInfo2', 2)
